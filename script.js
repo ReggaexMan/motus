@@ -38,16 +38,11 @@ const mots = [
     const idxAlea = getRandomNumber(mots.length)
     let mot = mots[idxAlea] // par exemple "fruit"
     // on le split pour le transformer en tableau 
-
     motSecret = mot.split("")
-
-
-
     console.log(motSecret)
   }
 
   function getRandomNumber(max){
-
     return Math.floor(Math.random() * max);
   }
   
@@ -56,7 +51,19 @@ const mots = [
     const champProposition = document.getElementById("guess-input");
     const proposition = champProposition.value.toLowerCase();
 
-    
-  }
-  
-  
+    userWord = proposition.split("")
+    console.log(userWord)
+
+    for (let i=0; i<motSecret.length; i++){
+        if (userWord[i] == motSecret[i]){
+          console.log("c'est gagné ✨", userWord[i])
+        } 
+        else {
+          if (motSecret.includes(userWord[i])){
+            console.log("presque 😉",userWord[i])
+           } else {
+            console.log("lettre pas dans le mot", userWord[i])
+         }
+        }
+      }
+    }
