@@ -5,21 +5,22 @@ html, body{
 }
 
 h1{
-    color: chocolate;  
+    color: chocolate; 
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     height: 20%;
-    background-color: aqua;
+    background: linear-gradient(to right, coral, aqua);
 }
 
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 60%;
+    height: 80%;
     background-color: aquamarine;
 }
+
 
 .tableau{
     grid-column: 2;
@@ -32,36 +33,44 @@ h1{
     height: 50px;
     width: 50px;
     border: 2px solid coral;
-    border-radius: 10%;
+    background: linear-gradient(coral, aqua);
+    border-radius: 15%;
     margin: 5px;
     text-transform: capitalize;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    color: magenta;
-
+    color: olivedrab;
+    background-color: ghostwhite;
+    border-style: outset;
 }
 
 .answer{
-    height: 20%;
-    background-color: aqua;
+    grid-column: 2;
     display: flex;
-    align-items: flex-start;
+    align-items: first baseline;
     justify-content: center;
-    padding-top: 10px;
+    margin: 0;
+    border-style: none;
 }
 
 #reponse{
+    padding: 10px;
     border-radius: 10%;
     margin-right: 5px;
-}
-
-#go:hover{
-    cursor: pointer;
+    border-style: none;
     
 }
 
+#go{
+    padding: 10px;
+    background-color: coral;
+    border-radius: 10%;
+    cursor: pointer;
+}
 
-
+#reponse:focus-visible{
+    outline-style: none;
+}
 
