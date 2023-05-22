@@ -1,31 +1,66 @@
 html, body{
     margin: 0;
     height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
 }
 
-#title{
-    height: 15%;
-    color: black;
+h1{
+    color: chocolate;  
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 20%;
     background-color: aqua;
 }
 
-#game{
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     height: 60%;
-    background-color: cornflowerblue;
-    display: flex;
+    background-color: aquamarine;
 }
 
-.answer{
-    height: 25%;
-    background-color: chartreuse;
+.tableau{
+    grid-column: 2;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.case{
+    height: 50px;
+    width: 50px;
+    border: 2px solid coral;
+    border-radius: 10%;
+    margin: 5px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: magenta;
+
+}
+
+.answer{
+    height: 20%;
+    background-color: aqua;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#reponse{
+    border-radius: 10%;
+    margin-right: 5px;
+}
+
+#go:hover{
+    cursor: pointer;
+    
+}
 
 
 
