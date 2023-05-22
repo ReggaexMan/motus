@@ -1,0 +1,32 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+#title{
+    height: 15%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+#game{
+    height: 60%;
+    background-color: cornflowerblue;
+    display: flex;
+}
+
+.answer{
+    height: 25%;
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
